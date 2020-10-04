@@ -1,0 +1,307 @@
+/*vvv moves area vvv*/
+@keyframes move1 {
+    0% {top: 0px; left: 0px}
+    100% {top: 600px; left: 700px}
+}
+@keyframes move2 {
+    0% {top: 0px; left: 0px}
+    100% {top: 570px; left: 750px}
+}
+@keyframes move3 {
+    0% {top: 0px; left: 0px}
+    100% {top: 540px; left: 800px}
+}
+@keyframes move4 {
+    0% {top: 0px; left: 0px}
+    100% {top: 100px; left: 650px}
+}
+@keyframes move5 {
+    0% {top: 0px; left: 0px}
+    100% {top: 100px; left: 700px}
+}
+@keyframes fadeOut {
+    0% {opacity:1}
+    45% {opacity:1}
+    55% {opacity:0}
+    100% {opacity:0}
+}
+/*^^^moves area ^^^*/
+body{
+    background: green;
+}
+.container1{ /*-------------------------1st game-----------------------*/
+    position: absolute;
+    animation-name: fadeOut;
+    animation-delay: 20s;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+img{ /*-------Sizing for all cards------*/
+    width: 150px;
+    height: 230px;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+.deck{/*--- stationary deck position---*/
+    position: relative;
+}
+.card1move { /*First card dealt-Ks*/
+    position: relative;
+    animation-name: move1;
+    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+#card1fade img.top {
+    animation-name: fadeOut;
+    animation-timing-function: ease-in-out;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+#card1fade img {
+    position: absolute;
+}
+
+.card2move { /*Second card dealt-9h*/
+    position: relative;
+    animation-name: move2;
+    animation-delay: 3s;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+#card2fade img.top {
+    animation-name: fadeOut;
+    animation-timing-function: ease-in-out;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+#card2fade img {
+    position: absolute;
+}
+.card3move { /*Third card dealt-2c*/
+    position: relative;
+    animation-name: move3;
+    animation-delay: 10s;
+    animation-duration: 5s; 
+    animation-fill-mode: both;
+}
+#card3fade img.top {
+    animation-name: fadeOut;
+    animation-timing-function: ease-in-out;
+    animation-delay: 7s;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+#card3fade img {
+    position: absolute;
+}
+.card4move { /*First dealer card dealt-Kh */
+    position: relative;
+    animation-name: move4;
+    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+#card4fade img.top {
+    animation-name: fadeOut;
+    animation-timing-function: ease-in-out;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+#card4fade img {
+    position: absolute;
+}
+.card5move { /*Second dealer card dealt-Jd  */
+    position: relative;
+    animation-name: move5;
+    animation-delay: 3s;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+#card5fade img.top {
+    animation-name: fadeOut;
+    animation-timing-function: ease-in-out;
+    animation-delay: 10s;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+#card5fade img {
+    position: absolute;
+}
+.container2{ /*-------------------------2nd game-----------------------*/
+    position: absolute;
+    animation-name: fadeOut;
+    animation-delay: 40s;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+.card1movept2 { /*First card dealt-6s*/
+    position: relative;
+    animation-name: move1;
+    animation-delay: 22s;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+#card1fadept2 img.top {
+    animation-name: fadeOut;
+    animation-timing-function: ease-in-out;
+    animation-delay: 20s;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+#card1fadept2 img {
+    position: absolute;
+}
+.card2movept2 { /*Second card dealt-9d */
+    position: relative;
+    animation-name: move2;
+    animation-delay: 23s;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+#card2fadept2 img.top {
+    animation-name: fadeOut;
+    animation-timing-function: ease-in-out;
+    animation-delay: 20s;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+#card2fadept2 img {
+    position: absolute;
+}
+.card3movept2 { /*Third card dealt-7c */
+    position: relative;
+    animation-name: move3;
+    animation-delay: 29s;
+    animation-duration: 5s; 
+    animation-fill-mode: both;
+}
+#card3fadept2 img.top {
+    animation-name: fadeOut;
+    animation-timing-function: ease-in-out;
+    animation-delay: 26s;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+#card3fadept2 img {
+    position: absolute;
+}
+.card4movept2 { /*First dealer card dealt-7s */
+    position: relative;
+    animation-name: move4;
+    animation-delay: 22s;
+    animation-duration: 5s; 
+    animation-fill-mode: both;
+}
+#card4fadept2 img.top {
+    animation-name: fadeOut;
+    animation-timing-function: ease-in-out;
+    animation-delay: 20s;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+#card4fadept2 img {
+    position: absolute;
+}
+.card5movept2 { /*Second dealer card dealt-10c */
+    position: relative;
+    animation-name: move5;
+    animation-delay: 23s;
+    animation-duration: 5s; 
+    animation-fill-mode: both;
+}
+#card5fadept2 img.top {
+    animation-name: fadeOut;
+    animation-timing-function: ease-in-out;
+    animation-delay: 28s;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+#card5fadept2 img {
+    position: absolute;
+}
+.container3{ /*-------------------------3rd game-----------------------*/
+    position: absolute;
+}
+.card1movept3 { /*First card dealt-Js*/
+    position: relative;
+    animation-name: move1;
+    animation-delay: 42s;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+#card1fadept3 img.top {
+    animation-name: fadeOut;
+    animation-timing-function: ease-in-out;
+    animation-delay: 40s;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+#card1fadept3 img {
+    position: absolute;
+}
+.card2movept3 { /*Second card dealt-As */
+    position: relative;
+    animation-name: move2;
+    animation-delay: 43s;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+#card2fadept3 img.top {
+    animation-name: fadeOut;
+    animation-timing-function: ease-in-out;
+    animation-delay: 40s;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+#card2fadept3 img {
+    position: absolute;
+}
+.card3movept3 { /*Third card dealt-Jh */
+    position: relative;
+    animation-name: move4;
+    animation-delay: 42s;
+    animation-duration: 5s; 
+    animation-fill-mode: both;
+}
+#card3fadept3 img.top {
+    animation-name: fadeOut;
+    animation-timing-function: ease-in-out;
+    animation-delay: 40s;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+#card3fadept3 img {
+    position: absolute;
+}
+.card4movept3 { /*First dealer card dealt-9s */
+    position: relative;
+    animation-name: move5;
+    animation-delay: 43s;
+    animation-duration: 5s; 
+    animation-fill-mode: both;
+}
+#card4fadept3 img.top {
+    animation-name: fadeOut;
+    animation-timing-function: ease-in-out;
+    animation-delay: 45s;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+#card4fadept3 img {
+    position: absolute;
+}
