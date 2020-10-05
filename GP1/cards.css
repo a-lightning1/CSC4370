@@ -26,8 +26,16 @@
     100% {opacity:0}
 }
 /*^^^moves area ^^^*/
+
+@keyframes fromLeft{
+    0% {opacity:0}
+    50% {opacity: 0}
+    90% {transform: translateX(-2000px);opacity: .7}
+    100% {transform: translateX(0); opacity: 1}
+}
+
 body{
-    background: green;
+    background: #27592D;
 }
 .container1{ /*-------------------------1st game-----------------------*/
     position: absolute;
@@ -304,4 +312,28 @@ img{ /*-------Sizing for all cards------*/
 }
 #card4fadept3 img {
     position: absolute;
+}
+
+/** James **/
+.gamecontainer {
+    margin: 5%;
+    padding: 5%;
+    border: 0.5em white solid;
+    height: 100rem;
+}
+.f1 {
+    animation: fromLeft;
+    animation-duration: 20s;
+}
+.f2 {
+    animation: fromLeft;
+    animation-duration: 40s;
+}
+.f3 {
+    animation: fromLeft;
+    animation-duration: 60s;
+}
+.f1 p, .f2 p, .f3 p {
+    font: bold 48pt Verdana;
+    color: white;
 }
