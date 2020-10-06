@@ -4,7 +4,8 @@
         <link rel="stylesheet" type="text/css" href="cards.css" />
     </head>
     <body>
-        <div class="gamecontainer">
+        <div class="wrapper">
+            <img id="table" src="bg1.png" alt="?">
             <div class="container1"> <!------------------1st Game-------------------->
                 <div class="card1move">
                     <div id="card1fade">
@@ -19,7 +20,7 @@
                     </div>
                 </div>
                 <div class="card3move">
-                    <div id="card3fade">
+                    <div id="card3fade" class="cardfade">
                         <img class="bottom" src="two.gif" alt="?">
                         <img class="top" src="cardback.jpeg" alt="?">
                     </div>
@@ -40,7 +41,7 @@
                     <img src="cardback.jpeg" alt="?">
                 </div>
                 <div class="f1">
-                    <p>You<br>Won</p>
+                    <p>You<br>Win</p>
                 </div>
             </div>
             <div class="container2"> <!------------------2nd Game-------------------->
@@ -78,7 +79,7 @@
                     <img src="cardback.jpeg" alt="?">
                 </div>
                 <div class="f2">
-                    <p>You<br>Lose</p>
+                    <p><span id="bust"><br>Bust!</span><br>You<br>Lose</p>
                 </div>
             </div>
             <div class="container3"> <!------------------3rd Game-------------------->
@@ -111,7 +112,7 @@
                     <img src="cardback.jpeg" alt="?">
                 </div>
                 <div class="f3">
-                    <p>You<br>Won</p>
+                    <p><br><br><br>Black Jack<br>You Win</p>
                 </div>
             </div>
         </div>
