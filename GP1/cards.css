@@ -1,23 +1,23 @@
 /*vvv moves area vvv*/
 @keyframes move1 {
     0% {top: 0em; left: 0em}
-    100% {top: 33em; left: 32em}
+    100% {top: 29em; left: 19em}
 }
 @keyframes move2 {
     0% {top: 0em; left: 0em}
-    100% {top: 31em; left: 34em}
+    100% {top: 27em; left: 20.5em}
 }
 @keyframes move3 {
     0% {top: 0em; left: 0em}
-    100% {top: 29em; left: 36.5em}
+    100% {top: 25em; left: 22.2em}
 }
 @keyframes move4 {
     0% {top: 0em; left: 0em}
-    100% {top: 6em; left: 32em}
+    100% {top: 3em; left: 19em}
 }
 @keyframes move5 {
     0% {top: 0em; left: 0em}
-    100% {top: 6em; left: 34em}
+    100% {top: 3em; left: 20.5em}
 }
 @keyframes fadeOut {
     0% {opacity:1}
@@ -33,17 +33,33 @@
     90% {transform: translateX(-2000px);opacity: .7}
     100% {transform: translateX(0); opacity: 1}
 }
-
+.wrapper{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1100px;
+    height: 800px;
+    
+}
+#table{
+    position: absolute;
+    width: 1100px;
+    height: 800px;
+    
+}
 .container1{ /*-------------------------1st game-----------------------*/
     position: absolute;
+    margin-left: 12.4em;
+    margin-top: 3em;
     animation-name: fadeOut;
     animation-delay: 20s;
     animation-duration: 3s;
     animation-fill-mode: both;
 }
 img{ /*-------Sizing for all cards------*/
-    width:7em;
-    height: 10em;
+    width: 6em;
+    height: 9em;
     border: 1px solid black;
     border-radius: 6px;
 }
@@ -51,7 +67,7 @@ img{ /*-------Sizing for all cards------*/
     position: relative;
 }
 .card1move { /*First card dealt-Ks*/
-    position: relative;
+    position: absolute;
     animation-name: move1;
     animation-delay: 2s;
     animation-duration: 5s;
@@ -69,7 +85,7 @@ img{ /*-------Sizing for all cards------*/
 }
 
 .card2move { /*Second card dealt-9h*/
-    position: relative;
+    position: absolute;
     animation-name: move2;
     animation-delay: 3s;
     animation-duration: 5s;
@@ -86,7 +102,7 @@ img{ /*-------Sizing for all cards------*/
     position: absolute;
 }
 .card3move { /*Third card dealt-2c*/
-    position: relative;
+    position: absolute;
     animation-name: move3;
     animation-delay: 10s;
     animation-duration: 5s; 
@@ -104,7 +120,7 @@ img{ /*-------Sizing for all cards------*/
     position: absolute;
 }
 .card4move { /*First dealer card dealt-Kh */
-    position: relative;
+    position: absolute;
     animation-name: move4;
     animation-delay: 2s;
     animation-duration: 5s;
@@ -121,7 +137,7 @@ img{ /*-------Sizing for all cards------*/
     position: absolute;
 }
 .card5move { /*Second dealer card dealt-Jd  */
-    position: relative;
+    position: absolute;
     animation-name: move5;
     animation-delay: 3s;
     animation-duration: 5s;
@@ -140,13 +156,15 @@ img{ /*-------Sizing for all cards------*/
 }
 .container2{ /*-------------------------2nd game-----------------------*/
     position: absolute;
+    margin-left: 12.4em;
+    margin-top: 3em;
     animation-name: fadeOut;
     animation-delay: 40s;
     animation-duration: 3s;
     animation-fill-mode: both;
 }
 .card1movept2 { /*First card dealt-6s*/
-    position: relative;
+    position: absolute;
     animation-name: move1;
     animation-delay: 22s;
     animation-duration: 5s;
@@ -164,7 +182,7 @@ img{ /*-------Sizing for all cards------*/
     position: absolute;
 }
 .card2movept2 { /*Second card dealt-9d */
-    position: relative;
+    position: absolute;
     animation-name: move2;
     animation-delay: 23s;
     animation-duration: 5s;
@@ -182,7 +200,7 @@ img{ /*-------Sizing for all cards------*/
     position: absolute;
 }
 .card3movept2 { /*Third card dealt-7c */
-    position: relative;
+    position: absolute;
     animation-name: move3;
     animation-delay: 29s;
     animation-duration: 5s; 
@@ -200,7 +218,7 @@ img{ /*-------Sizing for all cards------*/
     position: absolute;
 }
 .card4movept2 { /*First dealer card dealt-7s */
-    position: relative;
+    position: absolute;
     animation-name: move4;
     animation-delay: 22s;
     animation-duration: 5s; 
@@ -218,7 +236,7 @@ img{ /*-------Sizing for all cards------*/
     position: absolute;
 }
 .card5movept2 { /*Second dealer card dealt-10c */
-    position: relative;
+    position: absolute;
     animation-name: move5;
     animation-delay: 23s;
     animation-duration: 5s; 
@@ -237,9 +255,11 @@ img{ /*-------Sizing for all cards------*/
 }
 .container3{ /*-------------------------3rd game-----------------------*/
     position: absolute;
+    margin-left: 12.4em;
+    margin-top: 3em;
 }
 .card1movept3 { /*First card dealt-Js*/
-    position: relative;
+    position: absolute;
     animation-name: move1;
     animation-delay: 42s;
     animation-duration: 5s;
@@ -257,7 +277,7 @@ img{ /*-------Sizing for all cards------*/
     position: absolute;
 }
 .card2movept3 { /*Second card dealt-As */
-    position: relative;
+    position: absolute;
     animation-name: move2;
     animation-delay: 43s;
     animation-duration: 5s;
@@ -275,7 +295,7 @@ img{ /*-------Sizing for all cards------*/
     position: absolute;
 }
 .card3movept3 { /*Third card dealt-Jh */
-    position: relative;
+    position: absolute;
     animation-name: move4;
     animation-delay: 42s;
     animation-duration: 5s; 
@@ -293,7 +313,7 @@ img{ /*-------Sizing for all cards------*/
     position: absolute;
 }
 .card4movept3 { /*First dealer card dealt-9s */
-    position: relative;
+    position: absolute;
     animation-name: move5;
     animation-delay: 43s;
     animation-duration: 5s; 
@@ -313,10 +333,8 @@ img{ /*-------Sizing for all cards------*/
 
 /** James **/
 body{
-    background: #27592D;
-    margin: 3%;
+    background: black;
     padding: 3em;
-    border: 0.5em white solid;
     height: 44rem;
 }
 .f1 {
@@ -325,13 +343,16 @@ body{
 }
 .f2 {
     animation: fromLeft;
-    animation-duration: 40s;
+    animation-duration: 38s;
 }
 .f3 {
     animation: fromLeft;
     animation-duration: 53s;
 }
 .f1 p, .f2 p, .f3 p {
-    font: bold 48pt Verdana;
+    font: bold 35pt Verdana;
     color: white;
+}
+#bust{
+    color: red;
 }
