@@ -41,6 +41,21 @@
     90% {transform: translateX(-2000px);opacity: .7}
     100% {transform: translateX(0); opacity: 1}
 }
+@keyframes topToBottom {
+    0%, 20% {opacity: 1}
+    20.01%, 100% {opacity: 0}
+}
+@keyframes topToBottom2 {
+    0%, 15% {opacity: 1}
+    15.01%, 100% {opacity: 0}
+}
+@keyframes opacityOn {
+    0% {opacity: 0}
+    50% {opacity: 0}
+    90% {opacity: 0}
+    100% {opacity: 1}
+}
+
 .wrapper{ /*Wrapper for all game contents*/
     position: relative;
     top: 50%;
@@ -48,7 +63,10 @@
     transform: translate(-50%, -50%);
     width: 68rem;
     height: 50rem;
-    
+}
+.wrapper a {
+    animation: opacityOn 112s;
+    animation-fill-mode: both;
 }
 #table{ /*Size for table image*/
     position: absolute;
@@ -613,7 +631,15 @@ body{
     animation: fromLeft;
     animation-duration: 53s;
 }
-.f1 p, .f2 p, .f3 p {
+.f4 { /* */
+    animation: fromLeft;
+    animation-duration: 80s;
+}   
+.f5 { /* */
+    animation: fromLeft;
+    animation-duration: 109s;
+}
+.f1 p, .f2 p, .f3 p, .f4 p, .f5 p{
     font: bold 35pt Verdana;
     color: white;
 }
@@ -622,4 +648,66 @@ body{
 }
 #blackjack{
     color: yellow;
+}
+.aWrapper {
+    position: absolute;
+    font: bold 48px Verdana;
+    color: white;
+    margin-left: 750px;
+    margin-top: 375px;
+}
+.a1, .a2, .a3, .a4, .a5{
+    position: relative;
+}
+.a1 span {
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+    animation: topToBottom 20s;
+}
+.a1 span:nth-child(2) {
+    animation-delay: 9s;
+}
+.a2 span {
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+    animation: topToBottom2 20s;
+    animation-delay: 21.5s;
+}
+.a2 span:nth-child(2) {
+    animation-delay: 28s;
+}
+.a3 span {
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+    animation: topToBottom 20s;
+    animation-delay: 42s;
+}
+.a4 span {
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+    animation: topToBottom2 20s;
+    animation-delay: 57s;
+}
+.a4 span:nth-child(2){
+    animation-delay: 63s;
+}
+.a4 span:nth-child(3) {
+    animation-delay: 68s;
+}
+.a5 span {
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+    animation: topToBottom2 20s;
+    animation-delay: 82s;
+}
+.a5 span:nth-child(2) {
+    animation-delay: 88s;
+}
+.a5 span:nth-child(3) {
+    animation-delay: 93s;
 }
