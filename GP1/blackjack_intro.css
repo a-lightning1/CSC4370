@@ -1,0 +1,32 @@
+@keyframes fromLeft{
+    0% {opacity:0}
+    50% {opacity: 0}
+    90% {transform: translateX(-2000px);opacity: .7}
+    100% {transform: translateX(0); opacity: 1}
+}
+
+
+.f1 {
+    animation: fromLeft;
+    animation-duration: 20s;
+}
+.f2 {
+    animation: fromLeft;
+    animation-duration: 30s;
+}
+.f3 {
+    animation: fromLeft;
+    animation-duration: 10s;
+}
+.f1 p {
+    font: bold 25pt Arial;
+    color: Yellow;
+}
+.f2 p {
+    font: bold 45pt Arial;
+    color: red;
+}
+.f3 p {
+    font: bold 35pt Verdana;
+    color: red;
+}
