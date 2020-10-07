@@ -618,6 +618,13 @@ body{
     background: black;
     padding: 3em;
     height: 44rem;
+    background-color: #141114;
+    background-image: linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px),
+    linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px);
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
 }
 .f1 { /*You win*/
     animation: fromLeft;
@@ -664,6 +671,7 @@ body{
     position: absolute;
     overflow: hidden;
     animation: topToBottom 20s;
+    animation-delay: 1s;
 }
 .a1 span:nth-child(2) {
     animation-delay: 9s;
@@ -710,4 +718,13 @@ body{
 }
 .a5 span:nth-child(3) {
     animation-delay: 93s;
+}
+h1{
+    position: absolute; 
+    font: bold 48px Verdana; 
+    color: white; 
+    margin-top: 800px; 
+    left: 38%;
+    animation: opacityOn 120s;
+    animation-fill-mode: both;
 }
