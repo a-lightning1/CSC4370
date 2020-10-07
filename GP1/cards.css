@@ -1,3 +1,22 @@
+/*brick wall background*/
+body{
+    /*background: black;*/
+    padding: 3em;
+    height: 44rem;
+
+    background-color: #141114;
+    background-image: linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px),
+    linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px);
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+
+
+}
+
+
+
 /*vvv moves for all cards vvv*/
 @keyframes move1 {
     0% {top: 0em; left: 0em}
@@ -35,6 +54,8 @@
 }
 /*^^^moves for all cards^^^*/
 
+
+/*marquee animations*/
 @keyframes fromLeft{ /* word animation*/
     0% {opacity:0}
     50% {opacity: 0}
@@ -65,7 +86,7 @@
 }
 
 
-
+/*firecracker win animation*/
 
 .pyro > .before, .pyro > .after {
     position: absolute;
@@ -248,6 +269,8 @@
         margin-left: 80%; } }
 
 
+
+/*wrappers*/
 .wrapper{ /*Wrapper for all game contents*/
     position: relative;
     top: 50%;
@@ -260,12 +283,15 @@
     animation: opacityOn 112s;
     animation-fill-mode: both;
 }
+/*table */
 #table{ /*Size for table image*/
     position: absolute;
     width: 68rem;
     height: 50rem;
     
 }
+
+/*game animation*/
 .container1{ /*-------------------------1st game-----------------------*/
     position: absolute;
     margin-left: 12.4em;
@@ -805,22 +831,7 @@ img{ /*-------Sizing for all cards------*/
     position: absolute;
 }
 
-/** James **/
-body{
-    /*background: black;*/
-    padding: 3em;
-    height: 44rem;
 
-    background-color: #141114;
-    background-image: linear-gradient(335deg, black 23px, transparent 23px),
-    linear-gradient(155deg, black 23px, transparent 23px),
-    linear-gradient(335deg, black 23px, transparent 23px),
-    linear-gradient(155deg, black 23px, transparent 23px);
-    background-size: 58px 58px;
-    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
-
-
-}
 .f1 { /*You win*/
     animation: fromLeft;
     animation-duration: 20s;
@@ -989,7 +1000,7 @@ body{
 
 
 
-
+/*blackjack neon text effect*/
 
 @font-face {
     font-family: Clip;
@@ -997,7 +1008,7 @@ body{
 }
 
 
-
+/*blinking blackjack*/
 .sign {
     position: absolute;
     display: flex;
@@ -1200,3 +1211,7 @@ body{
 
 
 /* bust animation */
+
+
+
+/*you lose animation and effects*/
