@@ -1,22 +1,32 @@
-@keyframes fromLeft{
-    0% {opacity:0}
-    50% {opacity: 0}
-    90% {transform: translateX(-2000px);opacity: .7}
-    100% {transform: translateX(0); opacity: 1}
+@keyframes fromLeft1{
+    0% {transform: translateX(-200px); opacity: 0}
+    100% {transform: translateX(400px); opacity: 1}
 }
-
-
+@keyframes fromLeft2{
+    0% {transform: translateX(-200px); opacity: 0}
+    100% {transform: translateX(250px); opacity: 1}
+}
+body {
+    background:#003319;
+    padding: 3em;
+    height: 44rem;
+}
 .f1 {
-    animation: fromLeft;
-    animation-duration: 20s;
+    animation: fromLeft2;
+    animation-duration: 5s;
+    animation-delay: 6s;
+    animation-fill-mode: both;
 }
 .f2 {
-    animation: fromLeft;
-    animation-duration: 30s;
+    animation: fromLeft1;
+    animation-duration: 5s;
+    animation-delay: 11s;
+    animation-fill-mode: both;
 }
 .f3 {
-    animation: fromLeft;
-    animation-duration: 10s;
+    animation: fromLeft1;
+    animation-duration: 5s;
+    animation-fill-mode: both;
 }
 .f1 p {
     font: bold 25pt Arial;
@@ -25,8 +35,22 @@
 .f2 p {
     font: bold 45pt Arial;
     color: red;
+    margin: auto auto;
 }
 .f3 p {
     font: bold 35pt Verdana;
     color: red;
+}
+.rules{
+    color:yellow;
+    font-size: 18px;
+}
+.wrapper{ /*Wrapper for all game contents*/
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68rem;
+    height: 50rem;
+    
 }
