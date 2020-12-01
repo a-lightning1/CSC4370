@@ -1,0 +1,453 @@
+html, body {
+    text-decoration: none;
+    text-align: center;
+    /*display: block;*/
+    margin-left: auto;
+    margin-right: auto
+}
+
+img.resize {
+    height: 500px;
+    width: 500px;
+}
+
+#wrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: justify-all;
+}
+
+#main {
+    box-shadow: 0 5px 35px 0px rgb(0, 0, 0);
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+h1 {
+    color: #ff9800;
+    margin: auto;
+    text-align: center;
+    margin: auto;
+}
+h2 {
+    font-size: 26pt;
+}
+
+h2:after {
+    font-size: 26pt;
+}
+
+
+a {
+    font-color: #ff9800;
+    text-decoration: none;
+    border: 0;
+}
+
+.castle {
+    background: url("castle.jpg");
+    height: 500px;
+    width: 500px;
+}
+
+.castle_2 {
+    background: url("castle_2.jpg");
+}
+
+.castle_3 {
+    background: url("castle_3.jpg");
+}
+
+.castle_4 {
+    background: url("castle_6.jpg");
+}
+
+#one {
+    background-position: 0 0;
+}
+
+#two {
+    background-position: -125px 0;
+}
+
+#three {
+    background-position: -250px 0;
+}
+
+#four {
+    background-position: -375px 0;
+}
+
+#five {
+    background-position: 0 -125px;
+}
+
+#six {
+    background-position: -125px -125px;
+}
+
+#seven {
+    background-position: -250px -125px;
+}
+
+#eight {
+    background-position: -375px -125px;
+}
+
+#nine {
+    background-position: 0 -250px;
+}
+
+#ten {
+    background-position: -125px -250px;
+}
+
+#eleven {
+    background-position: -250px -250px;
+}
+
+#twelve {
+    background-position: -375px -250px;
+}
+
+#thirteen {
+    background-position: 0 -375px;
+}
+
+#fourteen {
+    background-position: -125px -375px;
+}
+
+#fifteen {
+    background-position: -250px -375px;
+}
+
+#sixteen {
+    border: 2px solid #3cb6d4 !important;
+}
+
+.clickable {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    transition: 0.3s;
+}
+
+.clickable:hover {
+    text-decoration: none !important;
+    color: #3cb6d4;
+    cursor: pointer;
+    opacity: 1;
+    transition-duration: 0.6s;
+    transform-origin: top left;
+}
+
+
+.animate-up {
+    -webkit-transform: translate(0, -125px);
+    -moz-transform: translate(0, -125px);
+    -ms-transform: translate(0, -125px);
+    -o-transform: translate(0, -125px);
+    transform: translate(0, -125px);
+}
+
+.animate-down {
+    -webkit-transform: translate(0, 125px);
+    -moz-transform: translate(0, 125px);
+    -ms-transform: translate(0, 125px);
+    -o-transform: translate(0, 125px);
+    transform: translate(0, 125px);
+}
+
+.animate-left {
+    -webkit-transform: translate(-125px, 0);
+    -moz-transform: translate(-125px, 0);
+    -ms-transform: translate(-125px, 0);
+    -o-transform: translate(-125px, 0);
+    transform: translate(-125px, 0);
+}
+
+.animate-right {
+    -webkit-transform: translate(125px, 0);
+    -moz-transform: translate(125px, 0);
+    -ms-transform: translate(125px, 0);
+    -o-transform: translate(125px, 0);
+    transform: translate(125px, 0);
+}
+
+body {
+    font-family: "Permanent Marker";
+    font-size: 14pt;
+    color: #3cb6d4;
+    background-color: #0A3940;
+    text-align: center;
+
+}
+
+h1 {
+    width: 90%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 26pt;
+    color: #ff9800;
+    margin-top: 0pt;
+    margin-left: .7em;
+    text-decoration: none;
+}
+
+h1:before, h1:after {
+    content: "";
+    display: inline-block;
+    width: 50%;
+    margin: 0 .5em 0 -55%;
+    vertical-align: middle;
+    border-bottom: 1px solid;
+    text-decoration: none;
+}
+
+h1:after {
+    margin: 0 -55% 0 .5em;
+    text-decoration: none;
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    background-color: transparent;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    /*color: #ff9800;*/
+    --c: #ff9800;
+    vertical-align: center;
+    color: var(--c);
+    font-size: 16px;
+    font-color: #ff9800;
+    border: 2px solid var(--c);
+    width: 121px;
+    height: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+nav ul li span {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+nav ul li:hover {
+    color: #0A3940;
+}
+
+nav ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+    --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+    --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+    --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+    --n: 4;
+}
+
+
+/*select option styling*/
+container {
+    margin-top: 10%;
+    width: 30%;
+    align-content: center;
+}
+
+.box {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box select {
+    font-family: "Permanent Marker";
+    background-color: #12707e;
+    color: #ff9800;
+    padding: 12px;
+    width: 250px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    outline: none;
+}
+
+.box::before {
+    content: "\f13a";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.box:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+    padding: 30px;
+}
+
+/*end select option styling*/
+
+
+
+/*this is the  curtain hover effect */
+.tile {
+    color: #ff9800;
+    width: 121px;
+    height: 121px;
+    float: left;
+    text-align: center;
+    /*border: 2px #ffffff solid;*/
+    vertical-align: middle;
+    font-size: 26px;
+    line-height: 121px;
+    --c: #3cb6d4;
+    /*color: var(--c);*/
+    border: 2px solid var(--c);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Permanent Marker";
+    font-color: #ff9800;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: "Permanent Marker";
+    font-size: 26pt;
+}
+
+.tile::before {
+    left: 0;
+    top: 0;
+    width: 121px;
+    height: 121px;
+    float: left;
+    text-align: center;
+    /*border: 2px #ffffff solid;*/
+    font-size: 26px;
+    font-family: "Permanent Marker";
+    /*line-height: 100px;*/
+    --c: #3cb6d4;
+    color: var(--c);
+    color: #ff9800;
+    border: 2px solid var(--c);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    /*letter-spacing: 0.1em;*/
+    /*text-align: center;*/
+    /*line-height: 3em;*/
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+
+}
+
+.tile:after {
+    content: "";
+    display: block;
+    border-top: 0 #0A3940 solid;
+    border-bottom: 15px transparent solid;
+    border-left: 0px #3cb6d4 solid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+
+.tile:hover:after {
+    z-index: -1;
+    border-left: 302px solid #ef6c00;
+    border-bottom: 302px solid transparent;
+    overflow: hidden;
+    background-color: #0A3940;
+    opacity: 60%;
+}
+
+.tile:hover {
+    font-size: 26px;
+    color: #0A3940;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.tile:after {
+    overflow: hidden;
+}
+
+.tile:before, .tile:hover:before, .tile:hover:after {
+    -webkit-transition: 0.75s all ease;
+    -moz-transition: 0.75s all ease;
+    -o-transition: 0.75s all ease;
+    transition: 0.75s all ease;
+}
+
+/*hover effect end*/
