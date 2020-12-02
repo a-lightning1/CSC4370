@@ -16,7 +16,7 @@ ol, ul {
     list-style: none
 }
 
-blockquote, q {
+blockquote, q { 
     quotes: none
 }
 
@@ -54,6 +54,7 @@ h1.container {
 p.container {
     color: #ef6c00;
     margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: 18px;
     max-width: 50ex;
