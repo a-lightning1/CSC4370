@@ -63,18 +63,18 @@ const background = ["castle", "castle_2", "castle_3", "castle_4"];
 /***
  * directionally aware hover effects
  */
-let el = document.getElementById('tile') //store element in el
+let el = document.getElementsByClassName('tile')[0]; //store element in el
 
 /* Get the height and width of the element */
-const height = el.clientHeight
-const width = el.clientWidth
+const height = el.clientHeight;
+const width = el.clientWidth;
 
 /*
   * Add a listener for mousemove event
   * Which will trigger function 'handleMove'
   * On mousemove
   */
-el.addEventListener('mousemove', handleMove)
+el.addEventListener('mousemove', handleMove);
 
 /* Define function a */
 function handleMove(e) {
@@ -84,9 +84,9 @@ function handleMove(e) {
       * On mouseover
       */
     /* Store the x position */
-    const xVal = e.layerX
+    const xVal = e.layerX;
     /* Store the y position */
-    const yVal = e.layerY
+    const yVal = e.layerY;
 
     /*
       * Calculate rotation valuee along the Y-axis
@@ -94,32 +94,32 @@ function handleMove(e) {
       * Control the rotation
       * You can change the value and see the results
       */
-    const yRotation = 20 * ((xVal - width / 2) / width)
+    const yRotation = 20 * ((xVal - width / 2) / width);
 
     /* Calculate the rotation along the X-axis */
-    const xRotation = -20 * ((yVal - height / 2) / height)
+    const xRotation = -20 * ((yVal - height / 2) / height);
 
     /* Generate string for CSS transform property */
-    const string = 'perspective(121px) scale(1.1) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)'
+    const string = 'perspective(121px) scale(1.1) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)';
 
     /* Apply the calculated transformation */
-    el.style.transform = string
+    el.style.transform = string;
 }
 
 /* Add listener for mouseout event, remove the rotation */
 el.addEventListener('mouseout', function () {
-    el.style.transform = 'perspective(121px) scale(1) rotateX(0) rotateY(0)'
-})
+    el.style.transform = 'perspective(121px) scale(1) rotateX(0) rotateY(0)';
+});
 
 /* Add listener for mousedown event, to simulate click */
 el.addEventListener('mousedown', function () {
-    el.style.transform = 'perspective(121px) scale(0.9) rotateX(0) rotateY(0)'
-})
+    el.style.transform = 'perspective(121px) scale(0.9) rotateX(0) rotateY(0)';
+});
 
 /* Add listener for mouseup, simulate release of mouse click */
 el.addEventListener('mouseup', function () {
-    el.style.transform = 'perspective(121px) scale(1.1) rotateX(0) rotateY(0)'
-})
+    el.style.transform = 'perspective(121px) scale(1.1) rotateX(0) rotateY(0)';
+});
 /* end directionally aware hover effect*/
 
 
@@ -296,7 +296,30 @@ function animateMovement(clickable_id, empty_id) {
 function checkForWin() {
     if (squares.toString() == shuffled.toString()) {
     //TODO
+        winScene();
     }
+}
+
+function winScene() {
+    document.body.style.backgroundImage = 'url("' + chosen_background + '.jpg")';
+    var main = document.getElementById('main');
+    main.innerHTML = "";
+    let str = "Victory!";
+    let arr = [...str];
+    let h1 = document.createElement('h1');
+    let btn = document.createElement('button');
+    let count = 0;
+    arr.forEach(char => {
+        let style = "animation-delay:" + (0.5 + count / 10) + "s";
+        let span = document.createElement('span');
+        span.textContent = char;
+        span.setAttribute('style',style);
+        h1.appendChild(span);
+        count++;
+    });
+    main.appendChild(h1);
+    btn.innerHTML = "<a href='index.html'>New Game</a>";
+    main.appendChild(btn);
 }
 
 /***
