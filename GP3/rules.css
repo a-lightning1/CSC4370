@@ -29,7 +29,7 @@ a{
 }
 
 h1{
-    font-size: 3em;
+    font-size: 4em;
     font-weight: normal;
 }
 
@@ -75,11 +75,11 @@ pre{
 
 .home-title span:nth-of-type(2)::before,
 .home-title span:nth-of-type(2)::after{
-    animation-delay: 3.5s;
+    animation-delay: 5.5s;
 }
 .home-title span:nth-of-type(3)::before,
 .home-title span:nth-of-type(3)::after{
-    animation-delay: 5.5s;
+    animation-delay: 10.5s;
 }
 
 @keyframes a-ltr-after{
@@ -92,3 +92,4 @@ pre{
     100% {transform: translateX(200%)}
     }
 }
+
