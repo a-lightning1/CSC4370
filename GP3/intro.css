@@ -4,7 +4,7 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	font-family: "Permanent Marker";
+	font-family: "Permanent Marker", cursive;
 	color: #ff9800;
 }
 .container {
